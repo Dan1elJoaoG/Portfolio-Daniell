@@ -1,0 +1,1400 @@
+body{margin: 0;
+background-image: url(Background_Port.png);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+@font-face {
+  font-family: 'Segoe UI Print';
+  src: url('fonts/segoepr.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.DivPrincipal{
+    width: 100%;
+    height: 375vh;
+    display: grid;
+    grid-template-columns: 15% 78% 7%;
+}
+.Clippy{
+    width: 100%;
+    position: sticky;
+    top: 0%;
+}
+.DivDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.DivDiv2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.DivCabeçario{
+    width: 12%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    display: grid;
+    grid-template-rows: 20% 10% 30% 40%;
+    position: fixed;
+    margin-top: 5%;
+}
+.DivInicio{
+    width: 80%;
+    height: 30%;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    margin-bottom: 3%;
+    margin-top: 5%;
+}
+.DivSobremim{
+    width: 80%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.Titulo{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 33px;
+    margin: 0px;
+    margin-left: 2%;
+    font-weight: 100;
+}
+.Disponivel{
+    font-family: 'Segoe UI Print', cursive;
+    font-size: 18px;
+    margin: 0px;
+    color: #303030;
+    margin-left: 2.3%;
+    margin-top: 0.3%;
+    font-weight: 200;
+}
+.DivTitulo{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.Terra_Visitas{
+    width: 30px;
+    height: 30px;
+}
+.DivVisitas{
+    position: absolute;
+    right: 0%;
+    display: flex;
+    width: 15%;
+}
+.TextoVisita{
+    font-family: 'Segoe UI Print', cursive;
+    text-decoration: underline;
+    font-size: 16.5px;
+    margin: 0px;
+    margin-left: 3%;
+    font-weight: 100;
+}
+.DivTexto{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.TextoInicial{
+    font-family: 'Segoe UI Print', cursive;
+    font-size: 18px;
+    margin: 0px;
+    color: #303030;
+    margin-left: 2%;
+    margin-right: 3%;
+}
+.DivFotinhaMinha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Fotinha_Minha{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+.DivNome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DivDivNome{
+    width: 70%;
+    height: 65%;
+    background-color: rgba(255, 255, 255, 0.500);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.Nomezinho{
+    font-family: 'Segoe UI Print', cursive;
+    font-size: 19px;
+    margin: 0;
+    margin-left: 3%;
+}
+.Nerd{
+    width: 28px;
+    height: 28px;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+.DivBotoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.DivDivBotoes{
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50%;
+}
+.DivBotoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DivFundoBotoes{
+    width: 80%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.500);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+.DivFundoBotoes:hover{
+    width: 85%;
+    height: 85%;
+    transition: 0.3s;
+}
+.DivVejaTambem{
+    display: grid;
+    grid-template-rows: repeat(5,20%);
+}
+.DivVeja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TextoVejaTambem{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 21px;
+    margin: 0;
+}
+.FundoVejaTambem{
+    width: 70%;
+    height: 65%;
+    background-color: rgba(255, 255, 255, 0.500);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+.NomezinhoMigos{
+    font-family: 'Segoe UI Print', cursive;
+    font-size: 16px;
+    margin: 0;
+    margin-left: 3%;
+}
+.Emoji{
+    width: 32px;
+    height: 32px;
+    margin-top: 1%;
+    margin-right: 7%;
+}
+.DivFundoSobreMim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TituloSobreMim{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 35px;
+    margin: 0;
+    margin-top: 2%;
+}
+.TextoSobreMim{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    width: 80%;
+    font-size: 19px;
+    margin: 0;
+    margin-top: 4%;
+    color: #303030;
+}
+.DivCursos{
+    width: 80%;
+    height: 75%;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    margin-bottom: 3%;
+    margin-top: 5%;
+    display: grid;
+    grid-template-rows: 12% 85% 3%;
+}
+.FotinhaSobreMim{
+    width: 90%;
+    height: 90%;
+}
+.DivTextoSobreMim{
+    display: flex;
+    justify-content: s;
+    flex-direction: column;
+}
+.DivTituloCursos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TituloCursos{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 30px;
+    margin: 0;
+}
+.DivQuadradinhoCursos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3, 33.33%);
+}
+.DivFundoCursos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FundoCursos{
+  position: relative;
+  width: 80%;
+  height: 80%;
+      display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+.FundoCursos:hover{
+    width: 90%;
+    height: 90%;
+    z-index: 99999;
+    transition: 0.5s;
+}
+
+.FundoCursos::before {
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(background_Cursos.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+    filter: brightness(0.85);
+    z-index: -1;
+    color: black;
+    text-decoration: none;
+}
+.TextoCursos{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 22px;
+    margin: 0;
+    width: 50%;
+    margin-right: 25%;
+}
+.ImagemCursos{
+    margin-left: 4%;
+}
+.DivHabilidades{
+    width: 80%;
+    height: 120%;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    margin-bottom: 3%;
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 10% 90%;
+}
+.DivProjetos{
+    width: 80%;
+    height: 140%;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    margin-bottom: 3%;
+    margin-top: 3%;
+    display: grid;
+    grid-template-rows: 8% 45% 45% 2%;
+}
+.DivContato{
+    width: 80%;
+    height: 130%;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    margin-bottom: 3%;
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 8% 90% 2%;
+}
+.DivRodape{
+    width: 80%;
+    height: 30%;
+    background: linear-gradient(to right, #0032DB, #0689E4);
+    backdrop-filter: blur(10px);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    box-shadow: inset 0 8px 32px rgba(253, 253, 253, 0.253);
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.DivTituloProjetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TituloProjetos{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 32px;
+    margin: 0;
+}
+.DivProjetoFundo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FundoProjeto{
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.Imagem_Camera{
+    width: 57%;;
+}
+.DivImagemCamera{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-right: 2px solid black;
+}
+.DivTextoProjetoFoto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.TituloProjetoFoto{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 30px;
+    margin: 0;
+}
+.TextoProjetoFoto{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 19px;
+    text-align: center;
+    margin: 0;
+    margin-top: 3%;
+    color: #303030;
+    width: 90%;
+}
+.BotaoProjetoFoto{
+    width: 50%;
+    height: 15%;
+    border-radius: 16px;
+    background: linear-gradient(to right, #0032DB, #0689E4);
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 19px;
+    margin-top: 3%;
+    color: white;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+.DivFormsContato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DivFundoFormsContato{
+  position: relative;
+  width: 65%;
+  height: 95%;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.DivFundoFormsContato::before {
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(background_forms.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+    filter: brightness(0.9);
+    z-index: -1;
+}
+.DivTituloContato{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TituloContato{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 29px;
+    margin: 0;
+}
+.DivFormsTexto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.TextoForms{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 20px;
+    color: #303030;
+    text-align: center;
+    margin: 0;
+    width: 97%;
+    margin-bottom: 3%;
+}
+.FundoContatoApps{
+  position: relative;
+  width: 70%;
+  height: 15%;
+      display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+.FundoContatoApps:hover{
+    width: 75%;
+    height: 20%;
+    transition: 0.5s;
+}
+
+.FundoContatoApps::before {
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(background_contato.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+    z-index: -1;
+}
+.ImgGithub{
+    width: 65px;
+    height: 65px;
+    margin-left: 3%;
+}
+.TextoContato{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 30px;
+    margin: 0;
+    color: black;
+    width: 70%;
+    text-align: start;
+}
+.FormsContarto{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.DivTextoRodape{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+}
+.TituloRodape{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 25px;
+    margin: 0;
+    color: white;
+}
+.TextoRodapeTelefone{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 19px;
+    margin: 0;
+    color: white;
+    display: flex;
+    margin-right: 20%;
+    justify-content: end;
+    align-items: end;
+}
+.TextoRodape{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 19px;
+    margin: 0;
+    margin-left: 16%;
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+.ImagemRodape{
+    margin-right: 1%;
+}
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+}
+#ProjetoWeb{
+    width: 75%;
+    height: 85vh;
+    background-image: url(Background_Dialog.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 16px;
+}
+#ProjetoWeb[open] {
+  display: grid;
+  grid-template-rows: 8% 30% 30% 30% 2%;
+}
+#fechar{
+    width: 5%;
+    height: 80%;
+    background: transparent;
+    background-image: url(Botao_fechar.png);
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+.DivTituloDialog{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.TituloDialog{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 32px;
+    margin: 0;
+    margin-right: 43%;
+}
+.DivDivDialog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DivFundoDialog{
+    width: 70%;
+    height: 93%;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    display: grid;
+    grid-template-columns: 23% 77%;
+}
+.DivImagemDialog{
+    background-image: url(Kingdom3d.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-right: 1px solid white;
+}
+.DivImagemDialog2{
+    background-image: url(Louie.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-right: 1px solid white;
+}
+.DivImagemDialog3{
+    background-image: url(Rooftop.png);
+    background-size: cover;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-right: 1px solid white;
+}
+.DivTextoDialog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.TituloDialogFundo{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 29px;
+    margin: 0;
+}
+#ProjetoFoto{
+    width: 75%;
+    height: 85vh;
+    background-image: url(Background_Dialog.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 16px;
+}
+#Fechar{
+    width: 5%;
+    height: 80%;
+    background: transparent;
+    background-image: url(Botao_fechar.png);
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+.TituloDialogFoto{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 32px;
+    margin: 0;
+    margin-right: 38%;
+}
+#ProjetoFoto[open] {
+  display: grid;
+  grid-template-rows: 8% 75% 75% 75% 75% 2%;
+}
+.DivDivFotografia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DivFundoFoto{
+    width: 45%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    display: grid;
+    grid-template-rows: 13% 74% 13%;
+}
+.FotoMinhaProj{
+    width: 9%;
+    height: 79%;
+    object-fit: cover;
+    margin-left: 2%;
+}
+.DivTituloProjFoto{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+.TituloProjFoto{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 22px;
+    margin: 0;
+    margin-left: 5%;
+}
+.DivImagemProjFoto{
+    background-image: url(Foto1_ProjFoto.png);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.DivSetaEsquerda{
+    background-color: white;
+    width: 6.5%;
+    height: 11%;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.SetaEsquerda{
+    margin-right: 15%;
+}
+.DivTextoProjFoto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TextoProjFoto{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+}
+.DivDivProjFoto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DivImagemProjFoto1{
+    background-image: url(Foto2_projFoto.png);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.DivImagemProjFoto2{
+    background-image: url(Foto3_projFoto.png);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.DivImagemProjFoto3{
+    background-image: url(Foto4_projFoto.png);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.DivHabCentral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FundoHabs{
+    width: 95%;
+    height: 95%;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    display: grid;
+    grid-template-rows: repeat(6, 16.6%);
+}
+.DivFundoBarra{
+    display: grid;
+    grid-template-rows: 40% 60%;
+
+}
+.TituloBarra{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 18px;
+    margin: 0;
+    margin-left: 3%;
+    margin-right: 7%;
+}
+.DivTituloBarra{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.BarraGif{
+    width: 200px;
+    height: 200px;
+}
+.DivTituloHab{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-content: center;
+    align-items: center;
+}
+.TituloHab{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 30px;
+    margin: 0;
+}
+.DivBordaHab{
+    width: 90%;
+    height: 30%;
+    border: 3px solid #0689E4;
+    border-radius: 50px;
+    margin-left: 3%;
+}
+.DivFundoBarrBorda{
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, #0032DB, #0689E4);
+    border-radius: 50px;
+}
+.DivFundoBarrBorda2{
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(to right, #0032DB, #0689E4);
+    border-radius: 50px;
+}
+.DivFundoBarrBorda3{
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, #0032DB, #0689E4);
+    border-radius: 50px;
+}
+.DivFundoBarrBorda4{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #0032DB, #0689E4);
+    border-radius: 50px;
+}
+.DivFundoBarrBorda5{
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, #0032DB, #0689E4);
+    border-radius: 50px;
+}
+.DivFundoBarrBorda6{
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(to right, #0032DB, #0689E4);
+    border-radius: 50px;
+}
+.DivSoftSkills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FundoDivSoftSkills{
+    width: 85%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.TituloSoftKills{
+   font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 20px;
+    margin: 0; 
+    margin-left: 1%;
+}
+.TituloSoftKills::before{
+    content: "•";
+}
+#FormContato{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.NomeForm{
+    width: 80%;
+    height: 10%;
+    background: linear-gradient(to right, #0032DB, #0689E4);
+    border: 1px solid white;
+    border-radius: 15px;
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 15px;
+    color: white;
+}
+.NomeForm::placeholder{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 15px;
+    color: white;
+    margin-left: 5%;
+}
+.MensagemForm{
+    width: 80%;
+    height: 40%;
+    background: linear-gradient(to right, #0032DB, #0689E4);
+    border: 1px solid white;
+    border-radius: 15px;
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 15px;
+    color: white;
+}
+.MensagemForm::placeholder{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 15px;
+    color: white;
+    margin-left: 5%;
+}
+.BotaoEnviar{
+    width: 80%;
+    height: 10%;
+    background: linear-gradient(to right, #0032DB, #0689E4);
+    border: 1px solid white;
+    border-radius: 15px;
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 15px;
+    color: white;
+}
+.reveal {
+  opacity: 0;
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translate(0, 0) scale(1) !important;
+}
+
+.from-right {
+  transform: translateX(60px);
+}
+
+.card{
+    background: linear-gradient(to right, #0032DB, #0689E4);
+    position: fixed;
+    width: 9%;
+    height: 13vh;
+    top: 13%;
+    right: 3.5%;
+    z-index: 99999;
+    border-radius: 16px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.TextoClippy{
+    font-family: 'Segoe UI Print', cursive;
+    font-style: italic;
+    font-size: 15px;
+    margin: 0px;
+    color: white;
+}
+@media (max-width: 768px) {
+ 
+  /* ---------- Base ---------- */
+  html { scroll-behavior: smooth; }
+ 
+  /* background-attachment: fixed não funciona bem no iOS,
+     então o fundo vira um pseudo-elemento fixo */
+  body {
+    background-image: none;
+    background-color: #dbe9f7;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: url(Background_Port.png) center / cover no-repeat;
+  }
+ 
+  /* Layout em 3 colunas vira uma coluna só */
+  .DivPrincipal {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+ 
+  /* ---------- Cabeçalho (vira barra fixa no topo) ---------- */
+  .DivDiv {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: auto;
+    padding: 8px 10px;
+    box-sizing: border-box;
+  }
+  .DivCabeçario {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    grid-template-rows: none;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  .DivVejaTambem { display: none; }
+ 
+  .Fotinha_Minha { width: 46px; height: 46px; }
+  .DivNome { min-width: 0; justify-content: flex-start; }
+  .DivDivNome { width: auto; height: auto; padding: 6px 10px; }
+  .Nomezinho { font-size: 15px; white-space: nowrap; }
+  .Nerd { width: 22px; height: 22px; }
+ 
+  .DivCabeçario > .DivBotoes { display: flex; justify-content: flex-end; }
+  .DivDivBotoes {
+    display: flex;
+    gap: 6px;
+    width: auto;
+    height: auto;
+  }
+  .DivDivBotoes .DivBotoes { width: auto; height: auto; }
+  .DivFundoBotoes,
+  .DivFundoBotoes:hover { width: 38px; height: 38px; }
+  .DivFundoBotoes img { width: 22px; height: 22px; object-fit: contain; }
+ 
+  /* Para o menu fixo não cobrir o título ao clicar nos botões */
+  #SobreMimim,
+  #CursosCursos,
+  #ProjetosProjetos,
+  #ContatoContato { scroll-margin-top: 90px; }
+ 
+  /* ---------- Coluna de conteúdo ---------- */
+  .DivDiv2 {
+    width: 100%;
+    height: auto;
+    padding: 0 12px;
+    box-sizing: border-box;
+    align-items: stretch;
+  }
+  .DivInicio,
+  .DivSobremim,
+  .DivCursos,
+  .DivHabilidades,
+  .DivProjetos,
+  .DivContato {
+    width: 100%;
+    height: auto;
+    margin: 12px 0;
+    box-sizing: border-box;
+  }
+ 
+  /* ---------- Início ---------- */
+  .DivInicio { padding: 14px; }
+  .DivTitulo { height: auto; flex-wrap: wrap; gap: 4px 10px; }
+  .Titulo { font-size: 26px; margin: 0; }
+  .Disponivel { font-size: 15px; margin: 0; }
+  .DivVisitas { position: static; width: auto; align-items: center; margin-left: auto; }
+  .Terra_Visitas { width: 22px; height: 22px; }
+  .TextoVisita { font-size: 14px; }
+  .DivTexto { height: auto; margin-top: 8px; }
+  .TextoInicial { font-size: 15px; margin: 0; }
+ 
+  /* ---------- Sobre mim ---------- */
+  .DivSobremim { grid-template-columns: 1fr; padding: 14px 0; }
+  .DivFundoSobreMim { padding-top: 6px; }
+  .FotinhaSobreMim { width: 55%; height: auto; }
+  .DivTextoSobreMim { align-items: center; }
+  .TituloSobreMim { font-size: 26px; text-align: center; margin-top: 8px; }
+  .TextoSobreMim { width: 88%; font-size: 15px; margin-top: 10px; }
+ 
+  /* ---------- Cursos ---------- */
+  .DivCursos { grid-template-rows: auto auto; padding: 14px 0; }
+  .TituloCursos { font-size: 24px; }
+  .DivQuadradinhoCursos {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    gap: 12px;
+    padding-top: 10px;
+  }
+  .DivQuadradinhoCursos > div:empty { display: none; }
+  .FundoCursos,
+  .FundoCursos:hover {
+    width: 92%;
+    height: auto;
+    min-height: 72px;
+    padding: 8px 0;
+  }
+  .FundoCursos { justify-content: flex-start; gap: 10px; }
+  .ImagemCursos { width: 52px; height: 52px; object-fit: contain; margin-left: 10px; }
+  .TextoCursos { font-size: 17px; width: auto; flex: 1; margin-right: 12px; }
+ 
+  /* ---------- Habilidades ---------- */
+  .DivHabilidades {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 14px 0;
+  }
+  .DivTituloHab { grid-column: 1; }
+  .TituloHab { font-size: 24px; }
+  .DivHabCentral { padding: 10px 0; }
+  .FundoHabs {
+    width: 92%;
+    height: auto;
+    grid-template-rows: none;
+    padding: 6px 0;
+  }
+  .DivFundoBarra { grid-template-rows: auto auto; row-gap: 6px; padding: 8px 0; }
+  .TituloBarra { font-size: 16px; }
+  .DivBordaHab { height: 12px; }
+  .DivSoftSkills { padding: 6px 0 10px; }
+  .FundoDivSoftSkills {
+    width: 92%;
+    height: auto;
+    gap: 10px;
+    padding: 14px 0;
+    justify-content: flex-start;
+  }
+  .TituloSoftKills { font-size: 16px; margin-left: 12px; }
+ 
+  /* ---------- Projetos ---------- */
+  .DivProjetos { grid-template-rows: none; padding: 14px 0; }
+  .DivProjetos > div:empty { display: none; }
+  .TituloProjetos { font-size: 26px; }
+  .DivProjetoFundo { margin: 8px 0; }
+  .FundoProjeto { width: 92%; height: auto; grid-template-columns: 1fr; }
+  .DivImagemCamera {
+    border-right: none;
+    border-bottom: 2px solid black;
+    padding: 14px 0;
+  }
+  .Imagem_Camera { width: 45%; max-width: 180px; }
+  .DivTextoProjetoFoto { padding: 14px 12px 18px; }
+  .TituloProjetoFoto { font-size: 22px; text-align: center; }
+  .TextoProjetoFoto { font-size: 15px; width: 100%; }
+  .BotaoProjetoFoto {
+    width: 60%;
+    height: auto;
+    min-height: 42px;
+    font-size: 17px;
+    margin-top: 12px;
+  }
+ 
+  /* ---------- Contato ---------- */
+  .DivContato { grid-template-columns: 1fr; grid-template-rows: none; padding: 14px 0; }
+  .DivContato > div:empty { display: none; }
+  .DivTituloContato { grid-column: 1; }
+  .TituloContato { font-size: 24px; }
+  .DivFormsContato { padding: 12px 0; }
+  .DivFundoFormsContato { width: 92%; height: auto; padding: 18px 0; }
+  #FormContato { width: 90%; height: auto; gap: 12px; }
+  .NomeForm,
+  .MensagemForm,
+  .BotaoEnviar {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px; /* evita zoom automático no iPhone */
+  }
+  .NomeForm { height: 44px; padding: 0 14px; }
+  .MensagemForm { height: 150px; padding: 12px 14px; }
+  .BotaoEnviar { height: 46px; }
+ 
+  .DivFormsTexto { padding: 12px 0 6px; }
+  .TextoForms { font-size: 15px; width: 90%; margin-bottom: 12px; }
+  .FundoContatoApps,
+  .FundoContatoApps:hover { width: 90%; height: 64px; margin: 8px 0; }
+  .ImgGithub { width: 42px; height: 42px; margin-left: 12px; }
+  .TextoContato { font-size: 22px; width: auto; flex: 1; margin-left: 12px; }
+ 
+  /* ---------- Rodapé ---------- */
+  .DivRodape {
+    width: calc(100% + 24px);
+    margin: 12px -12px 0;
+    height: auto;
+    padding: 22px 14px 26px;
+    box-sizing: border-box;
+    gap: 12px;
+  }
+  .TituloRodape { font-size: 18px; text-align: center; }
+  .DivTextoRodape { grid-template-columns: 1fr; gap: 10px; }
+  .TextoRodapeTelefone,
+  .TextoRodape {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    gap: 6px;
+    word-break: break-word;
+  }
+ 
+  /* ---------- Clippy ---------- */
+  .Clippy {
+    position: fixed;
+    top: auto;
+    bottom: 12px;
+    right: 12px;
+    width: 64px;
+    z-index: 99998;
+  }
+  .card {
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    top: auto;
+    bottom: 84px;
+    right: 12px;
+  }
+  .TextoClippy { font-size: 13px; }
+ 
+  /* ---------- Janelas (dialogs) ---------- */
+  #ProjetoWeb,
+  #ProjetoFoto {
+    width: 94vw;
+    max-width: 94vw;
+    height: 88vh;
+    max-height: 88vh;
+    padding: 8px 0;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  #ProjetoWeb[open],
+  #ProjetoFoto[open] {
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: none;
+  }
+  #ProjetoWeb[open] > *,
+  #ProjetoFoto[open] > * { flex-shrink: 0; }
+  #ProjetoWeb > div:empty,
+  #ProjetoFoto > div:empty { display: none; }
+ 
+  .DivTituloDialog { justify-content: flex-start; gap: 8px; padding: 6px 10px; }
+  #fechar,
+  #Fechar { width: 40px; height: 40px; flex: 0 0 40px; }
+  .TituloDialog,
+  .TituloDialogFoto { font-size: 22px; margin: 0; }
+ 
+  /* Projetos Web */
+  .DivDivDialog { padding: 8px 0; }
+  .DivFundoDialog {
+    width: 92%;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px auto;
+  }
+  .DivImagemDialog,
+  .DivImagemDialog2,
+  .DivImagemDialog3 {
+    border-right: none;
+    border-bottom: 1px solid white;
+    border-radius: 16px 16px 0 0;
+  }
+  .DivTextoDialog { padding: 14px 10px 18px; }
+  .TituloDialogFundo { font-size: 22px; }
+ 
+  /* Projetos Fotográficos */
+  .DivDivFotografia,
+  .DivDivProjFoto { padding: 8px 0; }
+  .DivFundoFoto { width: 92%; height: auto; grid-template-rows: auto auto auto; }
+  .DivImagemProjFoto,
+  .DivImagemProjFoto1,
+  .DivImagemProjFoto2,
+  .DivImagemProjFoto3 { height: 260px; }
+  .DivTituloProjFoto { padding: 8px 0; }
+  .FotoMinhaProj { width: 36px; height: 36px; margin-left: 10px; }
+  .TituloProjFoto { font-size: 17px; margin-left: 10px; }
+  .DivSetaEsquerda { width: 34px; height: 34px; }
+  .DivSetaEsquerda img { max-width: 60%; height: auto; }
+  .DivTextoProjFoto { padding: 10px 12px; }
+  .TextoProjFoto { font-size: 14px; }
+}
+ 
+/* ---------- Celulares bem pequenos ---------- */
+@media (max-width: 480px) {
+  .DivCabeçario { gap: 6px; padding: 6px 8px; }
+  .Fotinha_Minha { width: 40px; height: 40px; }
+  .Nerd { display: none; }
+  .Nomezinho { font-size: 14px; }
+  .DivDivBotoes { gap: 4px; }
+  .DivFundoBotoes,
+  .DivFundoBotoes:hover { width: 34px; height: 34px; }
+  .Titulo { font-size: 23px; }
+  .TextoCursos { font-size: 15px; }
+  .TextoContato { font-size: 19px; }
+  .card { display: none; } /* esconde o balão do Clippy; o boneco continua clicável */
+}
+.BotaoProjetoFoto:hover{
+    width: 53%;
+    height: 18%;
+    transition: 0.3s;
+}
